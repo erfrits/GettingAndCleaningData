@@ -21,6 +21,7 @@ data <- read.table("output.txt", header=TRUE)
 View(data)
 ```
 * README.md: this file :)
+* HTML files: the HTML counterpart of the markdown files
 
 ### Assumptions for running the script in R
 * dplyr package is installed
