@@ -7,9 +7,9 @@ The goal of the project is a tidy data set created from a set of data files and 
 
 ### About the solution
 + There is only one script file (run_analysis.R) which contains all the R codes to receive, tidy and finally summarize the project data.
-+ Two output files are generated:  
-  ++ output.txt: contains the means of each measured data by subject and activity  
-  ++ mean_and_std.txt: contains the cleaned mean and standard deviation data (tidy data without transformation)  
++ Two output files were generated:  
+  + output.txt: contains the means of each measured data by subject and activity  
+  + mean_and_std.txt: contains the cleaned mean and standard deviation data (tidy data without transformation) - _currently generation of this file is commented out_ 
 + In the output data set the train and test data are in the same data frame. 
 + Each measured data forms a column which its own name.
 + Each observation is in a separate row (indexed by the subject and the activity). 
