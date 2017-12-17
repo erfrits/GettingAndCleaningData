@@ -65,12 +65,12 @@ all_data <- rbind(train_all, test_all)
 all_data <- merge(all_data, act_labels, by.x = "activity", by.y = "id", all=FALSE) %>%  # merge data
                 mutate(activity=label) %>%                                              # copy labels to activity
                 select(1:69)                                                            # remove temporary column from the end
-write.table(all_data, "mean_and_std.txt")
+#write.table(all_data, "mean_and_std.txt")
 
 # Create & export summary
 # =======================
 summary <- all_data %>% select(1:68) %>% group_by(activity, subject) %>% summarize_all(mean, na.rm=TRUE)
-write.table(summary, "output.txt")
+write.table(summary, "output.txt", row.names = FALSE)
 
 
 # reset working directory
