@@ -60,11 +60,12 @@ train_all <- cbind(train_subj, train_act, train_meas.s) %>% mutate(dataset="TRAI
 test_all <- cbind(test_subj, test_act, test_meas.s) %>% mutate(dataset="TEST")
 all_data <- rbind(train_all, test_all)
 
-# Replace activity codes with names
-# ===================================
+# Replace activity codes with names & export result
+# =================================================
 all_data <- merge(all_data, act_labels, by.x = "activity", by.y = "id", all=FALSE) %>%  # merge data
                 mutate(activity=label) %>%                                              # copy labels to activity
                 select(1:69)                                                            # remove temporary column from the end
+write.table(all_data, "mean_and_std.txt")
 
 # Create & export summary
 # =======================

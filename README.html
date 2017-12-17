@@ -128,21 +128,18 @@ $(document).ready(function () {
 <h3>The goal of the project</h3>
 <p>The goal of the project is a tidy dataset created from a set of datafiles and the corresponding R script.</p>
 </div>
-<div id="about-the-result" class="section level3">
-<h3>About the result</h3>
+<div id="about-the-solution" class="section level3">
+<h3>About the solution</h3>
 <ul>
+<li></li>
+<li>Two output files are generated:<br />
+++ output.txt: contains the means of each measured data by subject and activity<br />
+++ mean_and_std.txt: contains the cleaned mean and standard deviation data (tidy data without transformation)<br />
+</li>
 <li>In the output dataset the train and test data are in the same data frame.</li>
 <li>Each measured data forms a column which its own name.</li>
 <li>Each observation is in a separate row (indexed by the subject and the activity).</li>
 <li>The data of the two datasets are copied by row into the result (like one is copied below the other). The rows of the different datasets are marked for easier separation later. I choose this option because the two separate data sets are from the same experiment only flagged to be “test” or “train” data. This way all the measured values can be analysed both together or separate.</li>
-</ul>
-</div>
-<div id="assumptions" class="section level3">
-<h3>Assumptions</h3>
-<ul>
-<li>dplyr package is installed</li>
-<li>the user has read and write rights in his/her current working directory</li>
-<li>the user has a working Internet connection</li>
 </ul>
 </div>
 <div id="files-in-the-repository" class="section level3">
@@ -151,10 +148,17 @@ $(document).ready(function () {
 <li>CodeBook.md: list and description of the variables in the output</li>
 <li>run_analisys.R: script to create a tidy data set from data collected from mobile phone accelerometers and gyroscopes (<a href="http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones" class="uri">http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones</a>)</li>
 <li><p>output.txt: the result of running the script; contains the means of each measured variable for each activity and subject pairs</p>
-<pre class="{r}"><code>download.file(&quot;https://dl.dropboxusercontent.com/content_link/t84FGjQLRWVCSYoetflnf0chO2Mo5GJNHiN8Id4RePFYc8ojwcrrEmTlxxsIjaXk/file?dl=1&quot;,&quot;output.txt&quot;)
-data &lt;- read.table(&quot;output.txt&quot;, header=TRUE)
+<pre class="{r}"><code>data &lt;- read.table(&quot;output.txt&quot;, header=TRUE)
 View(data)</code></pre></li>
 <li><p>README.md: this file :)</p></li>
+</ul>
+</div>
+<div id="assumptions-for-running-the-script-in-r" class="section level3">
+<h3>Assumptions for running the script in R</h3>
+<ul>
+<li>dplyr package is installed</li>
+<li>the user has read and write rights in his/her current working directory</li>
+<li>the user has a working Internet connection</li>
 </ul>
 </div>
 </div>

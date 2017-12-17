@@ -123,13 +123,14 @@ $(document).ready(function () {
 
 <div id="codebook" class="section level1">
 <h1>CodeBook</h1>
-<div id="variable-names-in-the-output-of-run_analysis.r" class="section level3">
-<h3>Variable names in the output of run_analysis.R</h3>
+<div id="variable-names-in-the-outputs-of-run_analysis.r" class="section level3">
+<h3>Variable names in the outputs of run_analysis.R</h3>
 <div id="indexing-variables" class="section level4">
 <h4>Indexing variables:</h4>
 <ul>
 <li>activity: The activity that was performed. One of the following: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING</li>
 <li>subject: Identifies the subject who performed the activity. Its range is from 1 to 30.</li>
+<li>dataset: Identifies the observation’s original data set. One of the following: TRAIN, TEST. Only available in mean_and_std.txt.</li>
 </ul>
 </div>
 <div id="measured-data" class="section level4">
@@ -138,43 +139,43 @@ $(document).ready(function () {
 <li>tbodyacc.mean.x: mean acceleration of the body in direction X. Its range is from -1 to 1.</li>
 <li>tbodyacc.mean.y: mean acceleration of the body in direction Y. Its range is from -1 to 1.</li>
 <li>tbodyacc.mean.z: mean acceleration of the body in direction Z. Its range is from -1 to 1.</li>
-<li>tbodyacc.std.x: stardard deviation of the acceleration of the body in direction X. Its range is from -1 to 1.</li>
-<li>tbodyacc.std.y: stardard deviation of the acceleration of the body in direction Y. Its range is from -1 to 1.</li>
-<li>tbodyacc.std.z: stardard deviation of the acceleration of the body in direction Z. Its range is from -1 to 1.</li>
+<li>tbodyacc.std.x: standard deviation of the acceleration of the body in direction X. Its range is from -1 to 1.</li>
+<li>tbodyacc.std.y: standard deviation of the acceleration of the body in direction Y. Its range is from -1 to 1.</li>
+<li>tbodyacc.std.z: standard deviation of the acceleration of the body in direction Z. Its range is from -1 to 1.</li>
 <li>tgravityacc.mean.x: mean acceleration by gravity in direction X. Its range is from -1 to 1.</li>
 <li>tgravityacc.mean.y: mean acceleration by gravity in direction Y. Its range is from -1 to 1.</li>
 <li>tgravityacc.mean.z: mean acceleration by gravity in direction Z. Its range is from -1 to 1.</li>
-<li>tgravityacc.std.x: stardard deviation of the acceleration of the gravity in direction X. Its range is from -1 to 1.</li>
-<li>tgravityacc.std.y: stardard deviation of the acceleration of the gravity in direction Y. Its range is from -1 to 1.</li>
-<li>tgravityacc.std.z: stardard deviation of the acceleration of the gravity in direction Z. Its range is from -1 to 1.</li>
-<li>tbodyaccjerk.mean.x: mean of Jerk singnals obtained from the body’s acceleration in direction X. Its range is from -1 to 1.</li>
-<li>tbodyaccjerk.mean.y: mean of Jerk singnals obtained from the body’s acceleration in direction Y. Its range is from -1 to 1.</li>
-<li>tbodyaccjerk.mean.z: mean of Jerk singnals obtained from the body’s acceleration in direction Z. Its range is from -1 to 1.</li>
-<li>tbodyaccjerk.std.x: standard devition of Jerk singnals obtained from the body’s acceleration in direction X. Its range is from -1 to 1.</li>
-<li>tbodyaccjerk.std.y: standard devition of Jerk singnals obtained from the body’s acceleration in direction X. Its range is from -1 to 1.</li>
-<li>tbodyaccjerk.std.z: standard devition of Jerk singnals obtained from the body’s acceleration in direction X. Its range is from -1 to 1.</li>
+<li>tgravityacc.std.x: standard deviation of the acceleration of the gravity in direction X. Its range is from -1 to 1.</li>
+<li>tgravityacc.std.y: standard deviation of the acceleration of the gravity in direction Y. Its range is from -1 to 1.</li>
+<li>tgravityacc.std.z: standard deviation of the acceleration of the gravity in direction Z. Its range is from -1 to 1.</li>
+<li>tbodyaccjerk.mean.x: mean of Jerk signals obtained from the body’s acceleration in direction X. Its range is from -1 to 1.</li>
+<li>tbodyaccjerk.mean.y: mean of Jerk signals obtained from the body’s acceleration in direction Y. Its range is from -1 to 1.</li>
+<li>tbodyaccjerk.mean.z: mean of Jerk signals obtained from the body’s acceleration in direction Z. Its range is from -1 to 1.</li>
+<li>tbodyaccjerk.std.x: standard deviation of Jerk signals obtained from the body’s acceleration in direction X. Its range is from -1 to 1.</li>
+<li>tbodyaccjerk.std.y: standard deviation of Jerk signals obtained from the body’s acceleration in direction X. Its range is from -1 to 1.</li>
+<li>tbodyaccjerk.std.z: standard deviation of Jerk signals obtained from the body’s acceleration in direction X. Its range is from -1 to 1.</li>
 <li>tbodygyro.mean.x: mean angular velocity of the body in direction X. Its range is from -1 to 1.</li>
 <li>tbodygyro.mean.y: mean angular velocity of the body in direction Y. Its range is from -1 to 1.</li>
 <li>tbodygyro.mean.z: mean angular velocity of the body in direction Z. Its range is from -1 to 1.</li>
 <li>tbodygyro.std.x: standard deviation of angular velocity of the body in direction X. Its range is from -1 to 1.</li>
 <li>tbodygyro.std.y: standard deviation of angular velocity of the body in direction Y. Its range is from -1 to 1.</li>
 <li>tbodygyro.std.z: standard deviation of angular velocity of the body in direction Z. Its range is from -1 to 1.</li>
-<li>tbodygyrojerk.mean.x: mean of Jerk singnals obtained from the body’s angular velocity in direction X. Its range is from -1 to 1.</li>
-<li>tbodygyrojerk.mean.y: mean of Jerk singnals obtained from the body’s angular velocity in direction Y. Its range is from -1 to 1.</li>
-<li>tbodygyrojerk.mean.z: mean of Jerk singnals obtained from the body’s angular velocity in direction Z. Its range is from -1 to 1.</li>
-<li>tbodygyrojerk.std.x: standard deviation of Jerk singnals obtained from the body’s angular velocity in direction X. Its range is from -1 to 1.</li>
-<li>tbodygyrojerk.std.y: standard deviation of Jerk singnals obtained from the body’s angular velocity in direction Y. Its range is from -1 to 1.</li>
-<li>tbodygyrojerk.std.z: standard deviation of Jerk singnals obtained from the body’s angular velocity in direction Z. Its range is from -1 to 1.</li>
+<li>tbodygyrojerk.mean.x: mean of Jerk signals obtained from the body’s angular velocity in direction X. Its range is from -1 to 1.</li>
+<li>tbodygyrojerk.mean.y: mean of Jerk signals obtained from the body’s angular velocity in direction Y. Its range is from -1 to 1.</li>
+<li>tbodygyrojerk.mean.z: mean of Jerk signals obtained from the body’s angular velocity in direction Z. Its range is from -1 to 1.</li>
+<li>tbodygyrojerk.std.x: standard deviation of Jerk signals obtained from the body’s angular velocity in direction X. Its range is from -1 to 1.</li>
+<li>tbodygyrojerk.std.y: standard deviation of Jerk signals obtained from the body’s angular velocity in direction Y. Its range is from -1 to 1.</li>
+<li>tbodygyrojerk.std.z: standard deviation of Jerk signals obtained from the body’s angular velocity in direction Z. Its range is from -1 to 1.</li>
 <li>tbodyaccmag.mean: mean magnitude of the body’s acceleration. Its range is from -1 to 1.</li>
 <li>tbodyaccmag.std: standard deviation of the magnitude of the body’s acceleration. Its range is from -1 to 1.</li>
 <li>tgravityaccmag.mean: mean magnitude of the gravity’s acceleration. Its range is from -1 to 1.</li>
 <li>tgravityaccmag.std: standard deviation of the magnitude of the gravity’s acceleration. Its range is from -1 to 1.</li>
-<li>tbodyaccjerkmag.mean: mean magnitude of the Jerk singnals obtained from the body’s acceleration. Its range is from -1 to 1.</li>
-<li>tbodyaccjerkmag.std: standard deviation magnitude of the Jerk singnals obtained from the body’s acceleration. Its range is from -1 to 1.</li>
+<li>tbodyaccjerkmag.mean: mean magnitude of the Jerk signals obtained from the body’s acceleration. Its range is from -1 to 1.</li>
+<li>tbodyaccjerkmag.std: standard deviation magnitude of the Jerk signals obtained from the body’s acceleration. Its range is from -1 to 1.</li>
 <li>tbodygyromag.mean: mean magnitude of the gravity’s angular velocity. Its range is from -1 to 1.</li>
 <li>tbodygyromag.std: standard deviation of the magnitude of the gravity’s angular velocity. Its range is from -1 to 1.</li>
-<li>tbodygyrojerkmag.mean: mean magnitude of the Jerk singnals obtained from the body’s angular velocity. Its range is from -1 to 1.</li>
-<li>tbodygyrojerkmag.std: standard deviation of magnitude of the Jerk singnals obtained from the body’s angular velocity. Its range is from -1 to 1.</li>
+<li>tbodygyrojerkmag.mean: mean magnitude of the Jerk signals obtained from the body’s angular velocity. Its range is from -1 to 1.</li>
+<li>tbodygyrojerkmag.std: standard deviation of magnitude of the Jerk signals obtained from the body’s angular velocity. Its range is from -1 to 1.</li>
 </ul>
 </div>
 <div id="data-transformed-using-fast-fourier-transform-ftt-method" class="section level4">
@@ -183,15 +184,15 @@ $(document).ready(function () {
 <li>fbodyacc.mean.x: mean transformed acceleration (FTT) of the body in direction X. Its range is from -1 to 1.</li>
 <li>fbodyacc.mean.y: mean transformed acceleration (FTT) of the body in direction Y. Its range is from -1 to 1.</li>
 <li>fbodyacc.mean.z: mean transformed acceleration (FTT) of the body in direction Z. Its range is from -1 to 1.</li>
-<li>fbodyacc.std.x: stardard deviation of the transformed acceleration (FTT) of the body in direction X. Its range is from -1 to 1.</li>
-<li>fbodyacc.std.y: stardard deviation of the transformed acceleration (FTT) of the body in direction Y. Its range is from -1 to 1.</li>
-<li>fbodyacc.std.z: stardard deviation of the transformed acceleration (FTT) of the body in direction Z. Its range is from -1 to 1.</li>
-<li>fbodyaccjerk.mean.x: mean of Jerk singnals obtained from the body’s transformed acceleration (FTT) in direction X. Its range is from -1 to 1.</li>
-<li>fbodyaccjerk.mean.y: mean of Jerk singnals obtained from the body’s transformed acceleration (FTT) in direction Y. Its range is from -1 to 1.</li>
-<li>fbodyaccjerk.mean.z: mean of Jerk singnals obtained from the body’s transformed acceleration (FTT) in direction Z. Its range is from -1 to 1.</li>
-<li>fbodyaccjerk.std.x: standard devition of Jerk singnals obtained from the body’s transformed acceleration (FTT) in direction X. Its range is from -1 to 1.</li>
-<li>fbodyaccjerk.std.y: standard devition of Jerk singnals obtained from the body’s transformed acceleration (FTT) in direction X. Its range is from -1 to 1.</li>
-<li>fbodyaccjerk.std.z: standard devition of Jerk singnals obtained from the body’s transformed acceleration (FTT) in direction X. Its range is from -1 to 1.</li>
+<li>fbodyacc.std.x: standard deviation of the transformed acceleration (FTT) of the body in direction X. Its range is from -1 to 1.</li>
+<li>fbodyacc.std.y: standard deviation of the transformed acceleration (FTT) of the body in direction Y. Its range is from -1 to 1.</li>
+<li>fbodyacc.std.z: standard deviation of the transformed acceleration (FTT) of the body in direction Z. Its range is from -1 to 1.</li>
+<li>fbodyaccjerk.mean.x: mean of Jerk signals obtained from the body’s transformed acceleration (FTT) in direction X. Its range is from -1 to 1.</li>
+<li>fbodyaccjerk.mean.y: mean of Jerk signals obtained from the body’s transformed acceleration (FTT) in direction Y. Its range is from -1 to 1.</li>
+<li>fbodyaccjerk.mean.z: mean of Jerk signals obtained from the body’s transformed acceleration (FTT) in direction Z. Its range is from -1 to 1.</li>
+<li>fbodyaccjerk.std.x: standard deviation of Jerk signals obtained from the body’s transformed acceleration (FTT) in direction X. Its range is from -1 to 1.</li>
+<li>fbodyaccjerk.std.y: standard deviation of Jerk signals obtained from the body’s transformed acceleration (FTT) in direction X. Its range is from -1 to 1.</li>
+<li>fbodyaccjerk.std.z: standard deviation of Jerk signals obtained from the body’s transformed acceleration (FTT) in direction X. Its range is from -1 to 1.</li>
 <li>fbodygyro.mean.x: mean transformed angular velocity (FTT) of the body in direction X. Its range is from -1 to 1.</li>
 <li>fbodygyro.mean.y: mean transformed angular velocity (FTT) of the body in direction Y. Its range is from -1 to 1.</li>
 <li>fbodygyro.mean.z: mean transformed angular velocity (FTT) of the body in direction Z. Its range is from -1 to 1.</li>
@@ -200,12 +201,12 @@ $(document).ready(function () {
 <li>fbodygyro.std.z: standard deviation of transformed angular velocity (FTT) of the body in direction Z. Its range is from -1 to 1.</li>
 <li>fbodyaccmag.mean: mean magnitude of the body’s transformed acceleration (FTT). Its range is from -1 to 1.</li>
 <li>fbodyaccmag.std: standard deviation of the magnitude of the body’s transformed acceleration (FTT). Its range is from -1 to 1.</li>
-<li>fbodybodyaccjerkmag.mean: mean magnitude of the transformed Jerk singnals obtained from the body’s acceleration. Its range is from -1 to 1.</li>
-<li>fbodybodyaccjerkmag.std: standard deviation of the magnitude of the transformed Jerk singnals obtained from the body’s acceleration. Its range is from -1 to 1.</li>
+<li>fbodybodyaccjerkmag.mean: mean magnitude of the transformed Jerk signals obtained from the body’s acceleration. Its range is from -1 to 1.</li>
+<li>fbodybodyaccjerkmag.std: standard deviation of the magnitude of the transformed Jerk signals obtained from the body’s acceleration. Its range is from -1 to 1.</li>
 <li>fbodybodygyromag.mean: mean magnitude of the transformed angular velocity. Its range is from -1 to 1.</li>
 <li>fbodybodygyromag.std: standard deviation of magnitude of the transformed angular velocity. Its range is from -1 to 1.</li>
-<li>fbodybodygyrojerkmag.mean: mean magnitude of the transformed Jerk singnals obtained from the angular velocity. Its range is from -1 to 1.</li>
-<li>fbodybodygyrojerkmag.std: standard deviation of magnitude of the transformed Jerk singnals obtained from the angular velocity. Its range is from -1 to 1.</li>
+<li>fbodybodygyrojerkmag.mean: mean magnitude of the transformed Jerk signals obtained from the angular velocity. Its range is from -1 to 1.</li>
+<li>fbodybodygyrojerkmag.std: standard deviation of magnitude of the transformed Jerk signals obtained from the angular velocity. Its range is from -1 to 1.</li>
 </ul>
 </div>
 </div>
