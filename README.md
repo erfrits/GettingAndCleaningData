@@ -20,11 +20,13 @@ The goal of the project is a tidy data set created from a set of data files and 
 * run_analysis.R: script to create a tidy data set from data collected from mobile phone accelerometers and gyroscopes (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 * output.txt: the final result of running the script; contains the means of each measured variable for each activity and subject pairs  
 ```{r}
+# to read back, use ths code
 data <- read.table("output.txt", header=TRUE)
 View(data)
 ```
 * mean_and_std.txt: contains the cleaned mean and standard deviation data (tidy data without transformation)
 * README.md: this file :)
+* HTML files: the HTML counterpart of the markdown files
 
 ### Requirements for running the script in R
 * dplyr package is installed
